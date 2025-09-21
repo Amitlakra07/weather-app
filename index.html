@@ -16,17 +16,17 @@
 <body>
   <main class="main">
     <header class="header">
-      <nav class="nav__bar">
+      <nav class="navbar">
         <div class="top__navbar">
-          <span>
+          <span class="logo__span">
             <img src="./assets/images/logo.svg" alt="weather app logo">
           </span>
-          <button class="Units">
-            <span>
+          <button class="units">
+            <span class="unit_icon__span">
               <img src="./assets/images/icon-units.svg" alt="Units icon">
             </span>
             Units
-            <span>
+            <span class="unit_icon__span">
               <img src="./assets/images/icon-dropdown.svg" alt="Dropdown Svg">
             </span>
           </button>
@@ -34,12 +34,14 @@
         <div class="bottom__navbar">
           <h1> How's the sky looking today?</h1>
           <div class="search_bar_container">
-            <span class="search-icon">
-              <img src="./assets/images/icon-search.svg" alt="">
-            </span>
-            <input type="search" name="search_bar" id="search_bar" placeholder="Search for a city, e.g., New York">
+            <!-- <div class="search_bar__box"> -->
+              <span class="search-icon">
+                <img src="./assets/images/icon-search.svg" alt="">
+              </span>
+              <input type="search" name="search_bar" id="search_bar" placeholder="Search for a city, e.g., New York">
+            <!-- </div> -->
+            <button id="search_btn">Search</button>
           </div>
-          <button id="search_btn">Search</button>
         </div>
       </nav>
     </header>
@@ -53,7 +55,7 @@
           <p class="current__time">Tuesday, Aug 5,2025</p>
         </div>
         <div class="current__tempreature__box">
-          <span>
+          <span class="hero_sunny_icon">
             <img src="./assets/images/icon-sunny.webp" alt="">
           </span>
           <p class="current__tempreature">68</p>
