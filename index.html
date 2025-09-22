@@ -35,10 +35,10 @@
           <h1> How's the sky looking today?</h1>
           <div class="search_bar_container">
             <!-- <div class="search_bar__box"> -->
-              <span class="search-icon">
-                <img src="./assets/images/icon-search.svg" alt="">
-              </span>
-              <input type="search" name="search_bar" id="search_bar" placeholder="Search for a city, e.g., New York">
+            <span class="search-icon">
+              <img src="./assets/images/icon-search.svg" alt="">
+            </span>
+            <input type="search" name="search_bar" id="search_bar" placeholder="Search for a city, e.g., New York">
             <!-- </div> -->
             <button id="search_btn">Search</button>
           </div>
@@ -64,32 +64,34 @@
       <!--  -->
       <div class="hero__bottom">
         <div class="hero__bottom__item">
-          <p>Feels Like</p>
-          <p>64</p>
+          <p class="hero_bottom_item_title">Feels Like</p>
+          <p class="hero_bottom_item_content">64</p>
         </div>
         <div class="hero__bottom__item">
-          <p>Humidity</p>
-          <p>46%</p>
+          <p class="hero_bottom_item_title">Humidity</p>
+          <p class="hero_bottom_item_content">46%</p>
         </div>
         <div class="hero__bottom__item">
-          <p>Wind</p>
-          <p>9 mph</p>
+          <p class="hero_bottom_item_title">Wind</p>
+          <p class="hero_bottom_item_content">9 mph</p>
         </div>
         <div class="hero__bottom__item">
-          <p>Precipitation</p>
-          <p>0 in</p>
+          <p class="hero_bottom_item_title">Precipitation</p>
+          <p class="hero_bottom_item_content">0 in</p>
         </div>
       </div>
     </div>
-    <!-- row 2 -->
+    
     <div class="daily_forecast_container">
       <!-- container 2 -->
-      <div class="daily_forecast_box">
+      <div class="daily_forecast_title">
         <h3>Daily forecast</h3>
+      </div>
+      <div class="daily_forecast_box">
         <div class="daily_forecast_item">
           <div class="daily_top_forecast">
             <p>Tue</p>
-            <span>
+            <span class="daily_span_img">
               <img src="./assets/images/icon-partly-cloudy.webp" alt="">
             </span>
           </div>
@@ -101,7 +103,7 @@
         <div class="daily_forecast_item">
           <div class="daily_top_forecast">
             <p>Wed</p>
-            <span>
+            <span class="daily_span_img">
               <img src="./assets/images/icon-partly-cloudy.webp" alt="">
             </span>
           </div>
@@ -113,7 +115,7 @@
         <div class="daily_forecast_item">
           <div class="daily_top_forecast">
             <p>Thu</p>
-            <span>
+            <span class="daily_span_img">
               <img src="./assets/images/icon-partly-cloudy.webp" alt="">
             </span>
           </div>
@@ -125,7 +127,7 @@
         <div class="daily_forecast_item">
           <div class="daily_top_forecast">
             <p>Fri</p>
-            <span>
+            <span class="daily_span_img">
               <img src="./assets/images/icon-partly-cloudy.webp" alt="">
             </span>
           </div>
@@ -137,7 +139,7 @@
         <div class="daily_forecast_item">
           <div class="daily_top_forecast">
             <p>Sat</p>
-            <span>
+            <span class="daily_span_img">
               <img src="./assets/images/icon-partly-cloudy.webp" alt="">
             </span>
           </div>
@@ -149,7 +151,7 @@
         <div class="daily_forecast_item">
           <div class="daily_top_forecast">
             <p>Sun</p>
-            <span>
+            <span class="daily_span_img">
               <img src="./assets/images/icon-partly-cloudy.webp" alt="">
             </span>
           </div>
@@ -161,7 +163,7 @@
         <div class="daily_forecast_item">
           <div class="daily_top_forecast">
             <p>Mon</p>
-            <span>
+            <span class="daily_span_img">
               <img src="./assets/images/icon-partly-cloudy.webp" alt="">
             </span>
           </div>
@@ -172,20 +174,20 @@
         </div>
       </div>
     </div>
-    <!-- Hourly forecast -->
+    <!-- row 2 -->
     <div class="hourly_forecast_container">
       <div class="hourly_forecast_box">
         <h3>Hourly forecast</h3>
-        <button>
+        <button id="hourly-btn">
           Tuesday
-          <span>
+          <span class="hourly_span">
             <img src="./assets/images/icon-dropdown.svg" alt="">
           </span>
         </button>
       </div>
       <div class="hourly_forecast_item">
         <div class="hourly_top_forecast">
-          <span>
+          <span class="hourly_span_img">
             <img src="./assets/images/icon-snow.webp" alt="">
           </span>
           <p>3 pm</p>
@@ -194,7 +196,7 @@
       </div>
       <div class="hourly_forecast_item">
         <div class="hourly_top_forecast">
-          <span>
+          <span class="hourly_span_img">
             <img src="./assets/images/icon-snow.webp" alt="">
           </span>
           <p>4 pm</p>
@@ -203,7 +205,7 @@
       </div>
       <div class="hourly_forecast_item">
         <div class="hourly_top_forecast">
-          <span>
+          <span class="hourly_span_img">
             <img src="./assets/images/icon-snow.webp" alt="">
           </span>
           <p>5 pm</p>
@@ -212,7 +214,7 @@
       </div>
       <div class="hourly_forecast_item">
         <div class="hourly_top_forecast">
-          <span>
+          <span class="hourly_span_img">
             <img src="./assets/images/icon-snow.webp" alt="">
           </span>
           <p>6 pm</p>
@@ -221,7 +223,7 @@
       </div>
       <div class="hourly_forecast_item">
         <div class="hourly_top_forecast">
-          <span>
+          <span class="hourly_span_img">
             <img src="./assets/images/icon-snow.webp" alt="">
           </span>
           <p>7 pm</p>
@@ -230,7 +232,7 @@
       </div>
       <div class="hourly_forecast_item">
         <div class="hourly_top_forecast">
-          <span>
+          <span class="hourly_span_img">
             <img src="./assets/images/icon-snow.webp" alt="">
           </span>
           <p>8 pm</p>
@@ -239,7 +241,7 @@
       </div>
       <div class="hourly_forecast_item">
         <div class="hourly_top_forecast">
-          <span>
+          <span class="hourly_span_img">
             <img src="./assets/images/icon-snow.webp" alt="">
           </span>
           <p>9 pm</p>
@@ -248,7 +250,7 @@
       </div>
       <div class="hourly_forecast_item">
         <div class="hourly_top_forecast">
-          <span>
+          <span class="hourly_span_img">
             <img src="./assets/images/icon-snow.webp" alt="">
           </span>
           <p>10 pm</p>
